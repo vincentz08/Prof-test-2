@@ -12,4 +12,21 @@ for (i in 1:3){
   print(mtcars$mpg[i])
 }
 ```
+## Task 2
+```{r}
+count_above <- function(vector, value){ #creates the function that takes two inputs
+  count <- 0 #creates an object that acts as a counter
+  for (i in 1:length(vector)){ #for loop that runs however long the vector is
+    if (vector[i] > value){ #runs if the vector value is greater than the cutoff
+      count <- count + 1 #increases the count object by 1
+    }
+  }
+  return(count) #returns the count value
+}
+```
+
+```{r}
+count_above(iris$Sepal.Length, 6) 
+count_above(mtcars$disp, 150)
+```
 
