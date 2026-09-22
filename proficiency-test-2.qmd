@@ -1,0 +1,15 @@
+---
+title: "Proficiency test 2"
+format: html
+editor: visual
+author:
+  name: Vincent Zheng
+---
+
+## Task 1
+```{r}
+for (i in 1:3){
+  print(mtcars$mpg[i])
+}
+```
+
