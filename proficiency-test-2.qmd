@@ -1,6 +1,6 @@
 ---
 title: "Proficiency test 2"
-format: html
+format: pdf
 editor: visual
 author:
   name: Vincent Zheng
@@ -32,5 +32,11 @@ count_above(mtcars$disp, 150)
 
 ## Task 3
 
-Masking functions is when a package that was newly installed contains a function that shares a name with a function that has either existed in a previously installed package or the base r functions. As a result, if not specifically specified, when running the function name, the one that corresponds to the newest package will be ran. For example, if package 'w' has a function called 'g' and has been installed and package 'q' was installed after that also has a function named 'g', the function g from package q will be ran when it is called unless the w was libraried in the code chunk.
+Masking functions is when a package that was newly installed contains a function that shares a name with a function that has either existed in a previously installed package or the base r functions. As a result, if not specifically specified, when running the function name, the one that corresponds to the newest package will be ran. For example, if package 'w' has a function called 'g' and has been installed and package 'q' was installed after that also has a function named 'g', the function g from package q will be ran when it is called unless w was libraried in the code chunk.
+
+## Task 4
+```{r}
+iris$Sepal.Length[1] #returns the sepal length of the first iris flower in the dataset
+iris[1,1]
+```
 
